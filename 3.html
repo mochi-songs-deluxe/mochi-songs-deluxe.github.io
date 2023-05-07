@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>abc</title>
+  <!-- Import CSS styles for the modal -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/10.16.6/sweetalert2.min.css">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* Style the highlighted text */
+    .highlight {
+      background-color: yellow;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <div class="spinning">
+    <img src="covers/3.png" alt="Your Image">
+  </div>      
+  <div class="container mx-auto my-8">
+    <p>Someone call a paramedic</p>
+    <p>I can't speak it's all phonetic</p>
+    <p>Made me forget every word 'cause like that's a lot of letters</p>
+    <p>ABCDEFGHIJKLMNOPQRSTUVWXYZ</p>
+    <p>Nine one one, hello, it's me Sophia</p>
+    <p>Yes, this is an emergency</p>
+    <p>Yes, the way they put it down on me</p>
+    <p>Got the whole room tipsy</p>
+    <p>Hyperventilating when</p>
+    <p>We be procreating</p>
+    <p>Where'd you learn to do that thing</p>
+    <p>How you hold the bat when you swing</p>
+    <p>I don't think I can breathe</p>
+    <p>I don't think I can be</p>
+    <p>I don't think I can think</p>
+    <p>I don't think I can see, fuck</p>
+    <p>Someone call a paramedic</p>
+    <p>I can't speak it's all phonetic</p>
+    <p>Made me forget every word 'cause like that's a lot of letters</p>
+    <p>ABCDEFGHIJKLMNOPQRSTUVWXYZ</p>
+    <p>Cut your pic out and put it my locket (wow, wow, wo)</p>
+    <p>So I could kiss you whenever I wanted</p>
+    <p>Hyperventilating when (oh)</p>
+    <p>We be procreating</p>
+    <p>Where'd you learn to do that thing (yeah)</p>
+    <p>How you hold the bat when you swing</p>
+    <p>I don't think I can breathe</p>
+    <p>I don't think I can be</p>
+    <p>I don't think I can think</p>
+    <p>I don't think I can see, shit</p>
+    <p>Someone call a paramedic</p>
+    <p>I can't speak it's all phonetic</p>
+    <p>Made me forget every word 'cause like that's a lot of letters</p>
+    <p>ABCDEFGHIJKLMNOPQRSTUVWXYZ</p>
+    <p>あいうえお</p>
+    <p>かきくけこ</p>
+    <p>さしすせそ</p>
+    <p>たちつてと</p>
+    <p>なにぬねの (yeah)</p>
+    <p>はひふへほ</p>
+    <p>まみむめも</p>
+    <p>やゐゆゑよ</p>
+    <p>らりるれろ</p>
+    <p>ぱぴぷぺぽ</p>
+    <p>「え ちょっと待って</p>
+    <p>ちょっと待って イケメンじゃない?</p>
+    <p>イケメンだよね?</p>
+    <p>無理 無理 無理 無理 無理</p>
+  </div>
+
+  <!-- Import JavaScript for the modal -->
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10.16.6/dist/sweetalert2.min.js"></script>
+  <script>
+    // Add click event listener to the highlighted text
+    const highlightedText = document.querySelector('.highlight');
+    highlightedText.addEventListener('click', () => {
+      // Show a modal with some content
+      Swal.fire({
+        title: 'Highlighted Text',
+        html: '<p>This is the text that was highlighted!</p>',
+        // icon: 'info'
+      });
+    });
+  </script>
+</body>
+</html>

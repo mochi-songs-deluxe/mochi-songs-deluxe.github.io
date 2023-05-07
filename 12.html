@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>wharf talk</title>
+  <!-- Import CSS styles for the modal -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/10.16.6/sweetalert2.min.css">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* Style the highlighted text */
+    .highlight {
+      background-color: yellow;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <div class="spinning">
+    <img src="covers/12.png" alt="Your Image">
+  </div>      
+  <div class="container mx-auto my-8">
+    <p>If God was here with us today</p>
+    <p>I think I know what He would say (some shit like)</p>
+    <p>"You're so beautiful, and your lips look nice"</p>
+    <p>Uh (not the, not the one on your face)</p>
+    <p>I got a new boat, you should come with</p>
+    <p>I got a section for your luggage</p>
+    <p>Bring some fiction and a nightlight</p>
+    <p>Record player and your top five</p>
+    <p>Where we goin'? We should get lost</p>
+    <p>No more questions, let the wharf talk, uh</p>
+    <p>(So there's a lot goin' on, make you comfortable)</p>
+    <p>I want you to come get lost with me</p>
+    <p>Ask you one more time before I tread too deep (I want you)</p>
+    <p>So can you make up your mind?</p>
+    <p>A wave's gonna come, wave's gonna come</p>
+    <p>So can you make up your mind?</p>
+    <p>A wave's gonna come (I want)</p>
+    <p>Unlike my friends, don't think I'll fall in love again</p>
+    <p>But I'll take a chance, seclusion isn't in my plans</p>
+    <p>Pack my shit up, time I headed back out 'cause my shit's up</p>
+    <p>Spend it all in one out, wanna split some</p>
+    <p>Some here with you right now</p>
+    <p>(Whatever you want)</p>
+    <p>If you got cold feet, it's warm by the water</p>
+    <p>You can turn your page around, let me be the author</p>
+    <p>Don't leave your destiny by the harbor</p>
+    <p>(Come on, it don't gotta be like that)</p>
+    <p>I want you (say yes), to come get lost with me</p>
+    <p>Ask you one more time (say yes), before I tread too deep (I want you)</p>
+    <p>So can you make up your mind?</p>
+    <p>A wave's gonna come, wave's gonna come</p>
+    <p>So can you make up your mind? (Flacko)</p>
+    <p>A wave's gonna come (I want)</p>
+    <p>Them bitches say I'm too conceited, they see the way I treat her</p>
+    <p>Be my señorita, put a ring up on her finger</p>
+    <p>Take her out the climate, somewhere to put her feet up</p>
+    <p>Neck Valentinin', rubies, diamonds, uh</p>
+    <p>Billionaire yacht party, climate was hot</p>
+    <p>Baby, if you seasick, we could stop at the dock</p>
+    <p>Yeah, lobster and calamari, caviar, um</p>
+    <p>Lots of luggage, private boarding, carry on, um (dance with us)</p>
+    <p>I got a new boat, you should come with (you should come with)</p>
+    <p>I got a section for your luggage (luggage)</p>
+    <p>Bring some fiction and a nightlight (nightlight)</p>
+    <p>Record player and your top five (top five)</p>
+    <p>Where we goin'? We should get lost (get lost)</p>
+    <p>No more questions, let the wharf talk (wharf talk)</p>
+    <p>Wharf talk, uh-huh</p>
+    <p>I want you (I want you)</p>
+    <p>To come get lost with me (make up your mind)</p>
+    <p>Ask you one more time (ask you one more time)</p>
+    <p>Before I go (oh-oh-oh-oh-oh-oh)</p>
+    <p>Before I go (oh-oh-oh-oh-oh-oh)</p>
+    <p>Before I go (oh-oh-oh-oh-oh-oh, oh, oh, oh, when you gonna come?)</p>
+  </div>
+
+  <!-- Import JavaScript for the modal -->
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10.16.6/dist/sweetalert2.min.js"></script>
+  <script>
+    // Add click event listener to the highlighted text
+    const highlightedText = document.querySelector('.highlight');
+    highlightedText.addEventListener('click', () => {
+      // Show a modal with some content
+      Swal.fire({
+        title: 'Highlighted Text',
+        html: '<p>This is the text that was highlighted!</p>',
+        // icon: 'info'
+      });
+    });
+  </script>
+</body>
+</html>

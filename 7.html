@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>touch tank</title>
+  <!-- Import CSS styles for the modal -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/10.16.6/sweetalert2.min.css">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* Style the highlighted text */
+    .highlight {
+      background-color: yellow;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <div class="spinning">
+    <img src="covers/7.png" alt="Your Image">
+  </div>      
+  <div class="container mx-auto my-8">
+    <p>Canceled a hot hipster threesome for you</p>
+    <p>'Cause I preach of freedom, but you're a fucking great excuse</p>
+    <p>Plus I'd rather get naked and swim in your blow-up pool</p>
+    <p>And dry our dolphin bodies off and question your tattoos</p>
+    <p>'Cause he's so pretty when he goes down on me</p>
+    <p>Gold-skinned eager baby, blue shirt out the laundry</p>
+    <p>He tells me he's gentle when he wants to be</p>
+    <p>So I think he wants to be gentle with me</p>
+    <p>It's such a short drive to get to the touch tank</p>
+    <p>To you, deep sea pearl, my soft manta ray (Manta ray)</p>
+    <p>Tender two fingers to touch the display</p>
+    <p>I used to dive deep 'til I got splashed in the face</p>
+    <p>He's so pretty when he goes down on me</p>
+    <p>Gold-skinned eager baby, blue shirt out the laundry</p>
+    <p>He tells me he's gentle when he wants to be</p>
+    <p>So I think he wants to be gentle with me</p>
+    <p>You took my breath away</p>
+    <p>So now I can't suck in my stomach around you anymore</p>
+    <p>We're too old to live with our parents</p>
+    <p>Do you wanna wake up to me every morning?</p>
+    <p>Every morning</p>
+    <p>Every morning</p>
+    <p>I'm swimming into you</p>
+    <p>I'll tumble to the ocean in a parachute</p>
+    <p>I am swimming into you</p>
+    <p>I'll tumble to the ocean</p>
+    <p>He's so pretty when he goes down on me</p>
+    <p>Gold-skinned eager baby, blue shirt out the laundry</p>
+    <p>He tells me he's gentle when he wants to be</p>
+    <p>So I think he wants to be gentle with me</p>
+  </div>
+
+  <!-- Import JavaScript for the modal -->
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10.16.6/dist/sweetalert2.min.js"></script>
+  <script>
+    // Add click event listener to the highlighted text
+    const highlightedText = document.querySelector('.highlight');
+    highlightedText.addEventListener('click', () => {
+      // Show a modal with some content
+      Swal.fire({
+        title: 'Highlighted Text',
+        html: '<p>This is the text that was highlighted!</p>',
+        // icon: 'info'
+      });
+    });
+  </script>
+</body>
+</html>

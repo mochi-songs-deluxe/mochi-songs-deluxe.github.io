@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>this hell</title>
+  <!-- Import CSS styles for the modal -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/10.16.6/sweetalert2.min.css">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* Style the highlighted text */
+    .highlight {
+      background-color: yellow;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <div class="spinning">
+    <img src="covers/1.png" alt="Your Image">
+  </div>      
+  <div class="container mx-auto my-8">
+    <p>Let's go, girls</p>
+    <p>Let's go, girls</p>
+    <p>Let's go, girls</p>
+    <p>Saw a poster on the corner opposite the motel</p>
+    <p>Turns out, I'm going to hell if I keep on being myself</p>
+    <p>Don't know what I did, but they seem pretty mad about it</p>
+    <p>God hates us? Alright then, buckle up, at dawn we're riding</p>
+    <p>Walk a mile on these coals, busy cleansing my soul</p>
+    <p>Getting ready for the night</p>
+    <p>Damned for eternity, but you're coming with me</p>
+    <p>Into the afterlife</p>
+    <p>This hell is better with you</p>
+    <p>We're burning up together, baby, that makes two</p>
+    <p>'Cause the devil's wearing Prada and loves a little drama, ooh-ooh</p>
+    <p>This hell is better with you</p>
+    <p>With you (whoa-oh-oh, whoa-oh-oh-oh-oh)</p>
+    <p>With you (whoa-oh-oh, whoa-oh-oh-oh-oh)</p>
+    <p>Oh, with you (whoa-oh-oh, whoa-oh-oh-oh-oh)</p>
+    <p>This hell is better with you, haha</p>
+    <p>Flame red, caught the moment, posing for the paparazzi</p>
+    <p>Fuck what they did to Britney, to Lady Di', and Whitney</p>
+    <p>Don't know why we're here, but might as well get down and dirty</p>
+    <p>That Satan's looking thirsty, not even he can hurt me</p>
+    <p>Walk a mile on these coals, busy cleansing my soul</p>
+    <p>Getting ready for the night</p>
+    <p>Damned for eternity, but you're coming with me</p>
+    <p>Into the afterlife (wow, that's hot)</p>
+    <p>This hell is better with you</p>
+    <p>We're burning up together, baby, that makes two</p>
+    <p>'Cause the devil's wearing Prada and loves a little drama, ooh-ooh</p>
+    <p>This hell is better with you (with you)</p>
+    <p>This life gave us nothing to lose</p>
+    <p>We're going down together, got a ticket for two</p>
+    <p>'Cause the devil's wearing Prada and loves a little drama, ooh-ooh</p>
+    <p>This hell is better with you</p>
+    <p>With you (whoa-oh-oh, whoa-oh-oh-oh-oh)</p>
+    <p>With you (whoa-oh-oh, whoa-oh-oh-oh-oh)</p>
+    <p>Oh, with you (whoa-oh-oh, whoa-oh-</p>
+  </div>
+
+  <!-- Import JavaScript for the modal -->
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10.16.6/dist/sweetalert2.min.js"></script>
+  <script>
+    // Add click event listener to the highlighted text
+    const highlightedText = document.querySelector('.highlight');
+    highlightedText.addEventListener('click', () => {
+      // Show a modal with some content
+      Swal.fire({
+        title: 'Highlighted Text',
+        html: '<p>This is the text that was highlighted!</p>',
+        // icon: 'info'
+      });
+    });
+  </script>
+</body>
+</html>

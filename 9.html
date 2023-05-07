@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>banana pancakes</title>
+  <!-- Import CSS styles for the modal -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/10.16.6/sweetalert2.min.css">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* Style the highlighted text */
+    .highlight {
+      background-color: yellow;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <div class="spinning">
+    <img src="covers/9.png" alt="Your Image">
+  </div>      
+  <div class="container mx-auto my-8">
+    <p>Well, can't you see that it's just rainin'?</p>
+<p>There ain't no need to go outside</p>
+<p>But baby</p>
+<p>You hardly even notice</p>
+<p>When I try to show you this</p>
+<p>Song is meant to keep you</p>
+<p>Doin' what you're supposed to</p>
+<p>Wakin' up too early</p>
+<p>Maybe we could sleep in</p>
+<p>Make you banana pancakes</p>
+<p>Pretend like it's the weekend now</p>
+<p>We could pretend it all the time</p>
+<p>Can't you see that it's just rainin'?</p>
+<p>There ain't no need to go outside</p>
+<p>But just maybe</p>
+<p>Halaka ukulele, mama made a baby</p>
+<p>Really don't mind the practice</p>
+<p>'Cause you're my little lady</p>
+<p>Lady, lady love me</p>
+<p>'Cause I love to lay here lazy</p>
+<p>We could close the curtains</p>
+<p>Pretend like there's no world outside</p>
+<p>Then we could pretend it all the time</p>
+<p>And can't you see that it's just rainin'?</p>
+<p>There ain't no need to go outside</p>
+<p>Ain't no need, ain't no need</p>
+<p>Mmm, mmm, mmm, mmm</p>
+<p>Can't you see, can't you see?</p>
+<p>Rain all day and I don't mind</p>
+<p>But the telephone's singing, ringing</p>
+<p>It's too early, don't pick it up</p>
+<p>We don't need to</p>
+<p>We got everything we need right here</p>
+<p>And everything we need is enough</p>
+<p>Just so easy when the whole world fits inside of your arms</p>
+<p>Do we really need to pay attention to the alarm?</p>
+<p>Wake up slow</p>
+<p>Mmm-mmm, wake up slow</p>
+<p>But baby</p>
+<p>You hardly even notice</p>
+<p>When I try to show you this</p>
+<p>Song is meant to keep you</p>
+<p>From doin' what you're supposed to</p>
+<p>Wakin' up too early</p>
+<p>Maybe we could sleep in</p>
+<p>Make you banana pancakes</p>
+<p>Pretend like it's the weekend now</p>
+<p>We could pretend it all the time</p>
+<p>Can't you see that it's just rainin'</p>
+<p>There ain't no need to go outside</p>
+<p>Ain't no need, ain't no need</p>
+<p>Rain all day and I really, really, really don't mind</p>
+<p>Can't you see, can't you see?</p>
+<p>We gotta wake up slow</p>
+  </div>
+
+  <!-- Import JavaScript for the modal -->
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10.16.6/dist/sweetalert2.min.js"></script>
+  <script>
+    // Add click event listener to the highlighted text
+    const highlightedText = document.querySelector('.highlight');
+    highlightedText.addEventListener('click', () => {
+      // Show a modal with some content
+      Swal.fire({
+        title: 'Highlighted Text',
+        html: '<p>This is the text that was highlighted!</p>',
+        // icon: 'info'
+      });
+    });
+  </script>
+</body>
+</html>

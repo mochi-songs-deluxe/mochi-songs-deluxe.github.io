@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>(only) about love</title>
+  <!-- Import CSS styles for the modal -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/10.16.6/sweetalert2.min.css">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* Style the highlighted text */
+    .highlight {
+      background-color: yellow;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <div class="spinning">
+    <img src="covers/10.png" alt="Your Image">
+  </div>      
+  <div class="container mx-auto my-8">
+    <p>Take my hand and come with me to another place</p>
+    <p>In outer space</p>
+    <p>We can walk around the universe tonight</p>
+    <p>And through the doors</p>
+    <p>Through the passages that lay inside your mind</p>
+    <p>We'll take a look inside and I'll show you all</p>
+    <p>The wonders far and wide</p>
+    <p>So let's fly up to the moon and see</p>
+    <p>The stars from high above</p>
+    <p>With no rain, and no clouds</p>
+    <p>Only love, oh</p>
+    <p>And we'll dance along the Milky Way</p>
+    <p>I hope that you feel the same</p>
+    <p>About me, about us, about love</p>
+    <p>Won't you just come on over</p>
+    <p>And let's share the blankets on my bed</p>
+    <p>Lay here instead</p>
+    <p>We won't need to do much thinking in our dreams</p>
+    <p>So let's fly up to the moon and see</p>
+    <p>The stars from high above</p>
+    <p>With no rain, and no clouds</p>
+    <p>Only love, oh</p>
+    <p>And we'll dance along the Milky Way</p>
+    <p>I hope that you feel the same</p>
+    <p>About me, about us</p>
+    <p>About me, about us</p>
+    <p>About me, about us</p>
+    <p>No, about love</p>
+  </div>
+
+  <!-- Import JavaScript for the modal -->
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10.16.6/dist/sweetalert2.min.js"></script>
+  <script>
+    // Add click event listener to the highlighted text
+    const highlightedText = document.querySelector('.highlight');
+    highlightedText.addEventListener('click', () => {
+      // Show a modal with some content
+      Swal.fire({
+        title: 'Highlighted Text',
+        html: '<p>This is the text that was highlighted!</p>',
+        // icon: 'info'
+      });
+    });
+  </script>
+</body>
+</html>

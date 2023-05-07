@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>glue song</title>
+  <!-- Import CSS styles for the modal -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/10.16.6/sweetalert2.min.css">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* Style the highlighted text */
+    .highlight {
+      background-color: yellow;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <div class="spinning">
+    <img src="covers/5.png" alt="Your Image">
+  </div>      
+  <div class="container mx-auto my-8">
+    <p>I've never known someone like you</p>
+    <p>Tangled in love, stuck by you from the glue</p>
+    <p>Don't forget to kiss me</p>
+    <p>Or else you'll have to miss me</p>
+    <p>I guess I'm stuck forever by the glue</p>
+    <p>Oh, and you</p>
+    <p>Mm-mm-mm-mm-mm</p>
+    <p>Mm-mm-mm-mm-mm-mm-mm</p>
+    <p>Mm-mm-mm-mm-mm</p>
+    <p>Findin' the right words to use for this song</p>
+    <p>I have you in mind, so it won't take so long</p>
+    <p>Never thought I'd find you</p>
+    <p>But you're here, and so I love you</p>
+    <p>I'm not wrong when I say I've been stuck</p>
+    <p>By the glue onto you</p>
+    <p>I've been stuck by glue</p>
+    <p>Right onto you</p>
+    <p>I've been stuck by glue</p>
+    <p>I've never known</p>
+    <p>I've never known someone like you</p>
+    <p>I've never known</p>
+    <p>I've never known someone like you</p>
+  </div>
+
+  <!-- Import JavaScript for the modal -->
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10.16.6/dist/sweetalert2.min.js"></script>
+  <script>
+    // Add click event listener to the highlighted text
+    const highlightedText = document.querySelector('.highlight');
+    highlightedText.addEventListener('click', () => {
+      // Show a modal with some content
+      Swal.fire({
+        title: 'Highlighted Text',
+        html: '<p>This is the text that was highlighted!</p>',
+        // icon: 'info'
+      });
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>sideways</title>
+  <!-- Import CSS styles for the modal -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/10.16.6/sweetalert2.min.css">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* Style the highlighted text */
+    .highlight {
+      background-color: yellow;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <div class="spinning">
+    <img src="covers/2.png" alt="Your Image">
+  </div>      
+  <div class="container mx-auto my-8">
+    <p>Smudged red lipstick on you</p>
+    <p>I'm so satisfied</p>
+    <p>We spilled that coffee cup</p>
+    <p>On my couch a thousand times</p>
+    <p>Oh, now I smile at strangers</p>
+    <p>I'm that annoying type</p>
+    <p>Who don't care if there's traffic</p>
+    <p>'Cause I've got plans tonight, oh</p>
+    <p>Later we'll meet at your place</p>
+    <p>Later we'll be together (ah)</p>
+    <p>Ever since you said that you were mine</p>
+    <p>Everything's going my way</p>
+    <p>And I like to get my way</p>
+    <p>Even when things go sideways</p>
+    <p>Raining on my parade</p>
+    <p>I get all my confidence from you</p>
+    <p>I get all my confidence from you</p>
+    <p>Hmm</p>
+    <p>One more cute disaster</p>
+    <p>Said, "I love you" twice</p>
+    <p>Before you could even answer</p>
+    <p>It's hard here in paradise</p>
+    <p>I'm living to look at your face</p>
+    <p>Living it up together (ah)</p>
+    <p>Ever since you said that you were mine</p>
+    <p>Everything's going my way</p>
+    <p>And I like to get my way</p>
+    <p>Even when things go sideways</p>
+    <p>Raining on my parade</p>
+    <p>I get all my confidence from you</p>
+    <p>I get all my confidence from you</p>
+    <p>Hmm</p>
+    <p>Ever since you said</p>
+  </div>
+
+  <!-- Import JavaScript for the modal -->
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10.16.6/dist/sweetalert2.min.js"></script>
+  <script>
+    // Add click event listener to the highlighted text
+    const highlightedText = document.querySelector('.highlight');
+    highlightedText.addEventListener('click', () => {
+      // Show a modal with some content
+      Swal.fire({
+        title: 'Highlighted Text',
+        html: '<p>This is the text that was highlighted!</p>',
+        // icon: 'info'
+      });
+    });
+  </script>
+</body>
+</html>

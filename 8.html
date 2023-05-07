@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>this is what falling in love feels like</title>
+  <!-- Import CSS styles for the modal -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/10.16.6/sweetalert2.min.css">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* Style the highlighted text */
+    .highlight {
+      background-color: yellow;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <div class="spinning">
+    <img src="covers/8.png" alt="Your Image">
+  </div>      
+  <div class="container mx-auto my-8">
+    <p>Feel like sun on my skin</p>
+<p>So this is love, I know it is</p>
+<p>I know it sounds super cliché</p>
+<p>But you make me feel some type of way</p>
+<p>This is falling, falling in love, yeah</p>
+<p>Mh-mh-mh-mh-mh-mmh, yeah</p>
+<p>I got a lot on my mind</p>
+<p>Got some more on my plate</p>
+<p>My baby got me looking forward to the end of the day</p>
+<p>What you say? You and me</p>
+<p>Just forget about the past, throw it in the trash</p>
+<p>What you say? You and me</p>
+<p>Live the life we never had like we're never going back</p>
+<p>Feel like sun on my skin</p>
+<p>So this is love, I know it is</p>
+<p>I know it sounds super cliché</p>
+<p>But you make me feel some type of way</p>
+<p>This is falling, falling in love</p>
+<p>I know it sounds super cliché</p>
+<p>But you make me feel some type of way</p>
+<p>This is falling, falling in love (yeah)</p>
+<p>This is falling, falling in love (ooh)</p>
+<p>This is falling, falling in love</p>
+  </div>
+
+  <!-- Import JavaScript for the modal -->
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10.16.6/dist/sweetalert2.min.js"></script>
+  <script>
+    // Add click event listener to the highlighted text
+    const highlightedText = document.querySelector('.highlight');
+    highlightedText.addEventListener('click', () => {
+      // Show a modal with some content
+      Swal.fire({
+        title: 'Highlighted Text',
+        html: '<p>This is the text that was highlighted!</p>',
+        // icon: 'info'
+      });
+    });
+  </script>
+</body>
+</html>
